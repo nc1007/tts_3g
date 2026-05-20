@@ -1,6 +1,6 @@
-# Tài liệu Hướng dẫn Sử dụng API OmniVoice
+# Tài liệu Hướng dẫn Sử dụng API Voice
 
-Tài liệu này hướng dẫn chi tiết cách tích hợp và sử dụng hệ thống API tổng hợp giọng nói và nhân bản giọng nói (Voice Cloning) dựa trên mô hình **OmniVoice** và framework **FastAPI**.
+Tài liệu này hướng dẫn chi tiết cách tích hợp và sử dụng hệ thống API tổng hợp giọng nói và nhân bản giọng nói (Voice Cloning) dựa trên mô hình **Voice** và framework **FastAPI**.
 
 ---
 
@@ -10,7 +10,7 @@ Hệ thống cung cấp giải pháp nhân bản giọng nói (Zero-shot Voice C
 
 | Thành phần | Mô tả |
 | :--- | :--- |
-| **Mô hình cốt lõi** | `k2-fsa/OmniVoice` — chạy trên môi trường CUDA/CPU, tối ưu hóa FP16 |
+| **Mô hình cốt lõi** | `Voice` — chạy trên môi trường CUDA/CPU, tối ưu hóa FP16 |
 | **Lưu trữ cấu trúc mẫu** | Lưu cục bộ tại thư mục `voice_sample/` |
 | **Lưu trữ đám mây** | Tích hợp **MinIO** S3 (`minio.zoffice.vn`) để lưu trữ và phân phối file audio |
 | **Tiền xử lý văn bản** | Bộ chuẩn hóa tiếng Việt `vinorm` — xử lý từ viết tắt, ký tự đặc biệt, ngày tháng, ngoại ngữ (ví dụ: *AI* → *Ây Ai*) |
