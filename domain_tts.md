@@ -20,7 +20,7 @@ Hệ thống cung cấp giải pháp nhân bản giọng nói (Zero-shot Voice C
 
 ## 2. Cấu hình Base URL
 
-**Base URL:** `https://api.voice.vn`
+**Base URL:** `https://api.voice.vn` (thay đổi domain cty cấp)
 
 ---
 
