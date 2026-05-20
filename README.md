@@ -1,16 +1,16 @@
 Dưới đây là toàn bộ nội dung file tài liệu hướng dẫn sử dụng API hoàn chỉnh dưới dạng Markdown (`.md`), bao gồm tổng quan, cấu hình, chi tiết toàn bộ các endpoint (đã bổ sung đầy đủ tham số, ví dụ cURL, ví dụ Python) cùng quy trình tiền xử lý dữ liệu:
 
 ```markdown
-# Tài liệu Hướng dẫn Sử dụng API OmniVoice (Voice Cloning Service)
+# Tài liệu Hướng dẫn Sử dụng API Voice (Voice Cloning Service)
 
-Tài liệu này hướng dẫn chi tiết cách tích hợp và sử dụng hệ thống API tổng hợp giọng nói và nhân bản giọng nói (Voice Cloning) dựa trên mô hình **OmniVoice** và framework **FastAPI**.
+Tài liệu này hướng dẫn chi tiết cách tích hợp và sử dụng hệ thống API tổng hợp giọng nói và nhân bản giọng nói (Voice Cloning) dựa trên mô hình **Voice** và framework **FastAPI**.
 
 ---
 
 ## 1. Tổng quan hệ thống
 Hệ thống cung cấp giải pháp nhân bản giọng nói (Zero-shot Voice Cloning) chất lượng cao bằng cách tiếp nhận một file âm thanh mẫu (Reference Audio) cùng văn bản tương ứng (Reference Text) để tạo ra định danh người nói (`id_directory`), từ đó cho phép tổng hợp một văn bản mới bất kỳ với chất giọng tương tự[cite: 1].
 
-* **Mô hình cốt lõi:** `k2-fsa/OmniVoice` (Chạy trên môi trường CUDA/CPU, tối ưu hóa FP16)[cite: 1].
+* **Mô hình cốt lõi:** `Voice` (Chạy trên môi trường CUDA/CPU, tối ưu hóa FP16)[cite: 1].
 * **Hệ thống lưu trữ cấu trúc mẫu:** Lưu cục bộ tại thư mục `voice_sample/`[cite: 1].
 * **Hệ thống lưu trữ đám mây:** Tích hợp **MinIO** S3 (`minio.zoffice.vn`) để lưu trữ và phân phối file audio kết quả lâu dài[cite: 1].
 * **Tiền xử lý văn bản:** Tích hợp bộ chuẩn hóa tiếng Việt nâng cao (`vinorm`, chuyển đổi từ viết tắt như *hđnd*, *ubnd*, xử lý các ký tự đặc biệt, định dạng ngày tháng, ngoại ngữ như *AI* -> *Ây Ai*)[cite: 1].
