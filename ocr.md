@@ -87,7 +87,6 @@ curl -X POST "https://ocr-hd.zipai.vn/ocr" \
 
 Hành vi **giống hoàn toàn** endpoint `/ocr` (ảnh → chuyển sang PDF → OCR; ảnh có chạy `extract_cccd`). Request/response identical với mục [1. POST /ocr](#1-post-ocr).
 
-> ⚠️ Lưu ý: do trong code có nhiều hàm cùng tên `ocr` (FastAPI route override theo path, không theo tên hàm), nên `/ocr_base` hoạt động độc lập và đang trùng logic với `/ocr`.
 
 ### Ví dụ curl
 
